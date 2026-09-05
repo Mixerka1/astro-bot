@@ -1,6 +1,7 @@
 import asyncio
 import hashlib
 import logging
+import os
 import random
 from datetime import datetime
 
@@ -13,7 +14,11 @@ from aiogram.fsm.storage.memory import MemoryStorage
 
 # ==================== НАСТРОЙКИ ====================
 
-BOT_TOKEN = "ВСТАВЬ_СЮДА_ТОКЕН_ОТ_BOTFATHER"
+# Токен берётся из переменной окружения BOT_TOKEN.
+# В Railway: Project -> Variables -> добавить BOT_TOKEN = твой токен от BotFather.
+# Для локального теста можно временно раскомментировать строку ниже и вписать токен напрямую:
+# BOT_TOKEN = "123456789:AAExxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+BOT_TOKEN = os.environ["BOT_TOKEN"]
 
 logging.basicConfig(level=logging.INFO)
 
