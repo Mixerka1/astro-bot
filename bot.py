@@ -18,7 +18,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 # В Railway: Project -> Variables -> добавить BOT_TOKEN = твой токен от BotFather.
 # Для локального теста можно временно раскомментировать строку ниже и вписать токен напрямую:
 # BOT_TOKEN = "123456789:AAExxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-BOT_TOKEN = os.environ["BOT_TOKEN"]
+BOT_TOKEN = os.environ["8618067823:AAFiYp6THoUOclXK3GOMkQZcGopBvCawFOw"]
 
 logging.basicConfig(level=logging.INFO)
 
